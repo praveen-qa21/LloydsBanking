@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.09">
+    <AppHdr>
+        <Fr>
+            <FIId>
+                <FinInstnId>
+                    <BIC>citius33</BIC>
+                </FinInstnId>
+            </FIId>
+        </Fr>
+        <To>
+            <FIId>
+                <FinInstnId>
+                    <BIC>lloydgb</BIC>
+                </FinInstnId>
+            </FIId>
+        </To>
+        <BizMsgIdr>YOUR_BUSINESS_MESSAGE_ID</BizMsgIdr>
+        <MsgDefIdr>pacs.008.001.09</MsgDefIdr>
+        <CreDt>2023-06-12T12:00:00Z</CreDt>
+    </AppHdr>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>YOUR_MESSAGE_ID</MsgId>
+            <CreDtTm>2023-06-12T12:00:00Z</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <CtrlSum>100.00</CtrlSum>
+            <InitgPty>
+                <Nm>Sender Name</Nm>
+            </InitgPty>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <EndToEndId>YOUR_END_TO_END_ID</EndToEndId>
+            </PmtId>
+            <Amt>
+                <InstdAmt Ccy="EUR">100.00</InstdAmt>
+            </Amt>
+            <Cdtr>
+                <Nm>Receiver Name</Nm>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>GB12345678901234567890</IBAN>
+                </Id>
+            </CdtrAcct>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BIC>lloydgb</BIC>
+                </FinInstnId>
+            </CdtrAgt>
+            <ChrgBr>SLEV</ChrgBr>
+            <UltmtCdtr>
+                <Nm>Ultimate Receiver Name</Nm>
+            </UltmtCdtr>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>
